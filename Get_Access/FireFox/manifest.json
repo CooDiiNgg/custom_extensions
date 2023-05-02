@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Get_Access",
+    "version": "1.0",
+    "description": "Gives you access to google classroom main directory so you can see other students' work.",
+    "icons": {
+        "48": "icons/Get_access_icon.png"
+    },
+    
+    "browser_action": {
+        "default_icon": {
+          "48": "icons/Get_access_icon.png"
+        },
+        "default_title": "Get_Access"
+    },
+    
+    "background": {
+        "scripts": ["Get_Access.js"]
+    },
+    
+    "permissions": [
+        "tabs",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>",
+        "cookies",
+        "storage"
+    ]
+}
